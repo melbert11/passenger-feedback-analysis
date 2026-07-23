@@ -13,12 +13,13 @@ __pycache__/
 .venv/
 env/
 
-# Data  
-data/*.csv
-data/licenses/*.jpg
-data/licenses/*.png
+# Data
+# Keep source files in data/raw/ versioned; ignore derived datasets.
+/data/processed/
 
-# Models  
+# Generated ML artifacts and downloaded/trained models
+/artifacts/
+/models/
 *.h5
 *.pkl
 *.joblib
